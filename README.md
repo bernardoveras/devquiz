@@ -37,7 +37,7 @@
    <img src="./.github/assets/app_screenshot.png">
 </div>
 
-# :rocket: Technologies
+# :rocket: Tecnologias
 Este projeto foi realizado utilizando as seguintes tecnologias:
 
 * [Flutter](https://flutter.dev)
@@ -45,7 +45,7 @@ Este projeto foi realizado utilizando as seguintes tecnologias:
 * [GetX](https://github.com/jonataslaw/getx)
 * [Clean Code](https://sites.google.com/site/unclebobconsultingllc/_/rsrc/1506631763576/home/Screen%20Shot%202017-09-28%20at%203.44.41%20PM.jpg)
 
-# :computer: How to run
+# :computer: Como usar
 
 ```bash
 # Clone Repository
@@ -62,7 +62,7 @@ $ flutter run
 
 Create a <a href="https://github.com/bernardoveras/devquiz/issues">new issue report</a>, it will be an honor to be able to help you solve and further improve our application.
 
-# :sparkles: Contributing
+# :sparkles: Contribua
 
 This project follows the GetX Clean pattern. [Click](https://github.com/bernardoveras/getx_clean) to know more.
 
@@ -71,7 +71,7 @@ This project follows the GetX Clean pattern. [Click](https://github.com/bernardo
 - Commit your changes: `git commit -m 'feat: my new feature'`;
 - Push to your branch: `git push origin my-feature`.
 
-# :page_facing_up: License
+# :page_facing_up: Licença
 
 This project is under the [MIT License](./LICENSE) |
 Made with 💖 by [Bernardo Veras](https://www.linkedin.com/in/bernardoveras/).
