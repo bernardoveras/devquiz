@@ -1,28 +1,9 @@
+import 'package:devquiz/shared/constants/app_colors.dart';
 import 'package:devquiz/shared/helpers/theme_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class AppTheme {
-  /// Pallete of `Primary` color's
-  static Color primary =  Color(0xFF1365FE);
-  static Color primaryDark = Color(0xFF0D2ADF);
-  static Color primaryLight = Color(0xFF4CD1FF);
-
-  /// Pallete of `Secondary` color's
-  static Color secondary = Color(0xFF00AFF1);
-  static Color secondaryDark = Color(0xFF00AFF1);
-  static Color secondaryLight = Color(0xFF00AFF1);
-
-  /// Pallete of `State` color's
-  static Color error = Color(0xFFFF3B3B);
-  static Color success = Color(0xFF06C270);
-  static Color warning = Color(0XFFFFCC00);
-  static Color info = Color(0xFF0063F7);
-
-  /// Other color's
-  static Color background = Color(0xFFF4F5F8);
-  static Color backgroundDark = Color(0xFF1D1B1C);
-
   /// Init `theme light data` from application
   static final ThemeData light = ThemeData(
     appBarTheme: AppBarTheme(
@@ -31,15 +12,15 @@ class AppTheme {
       iconTheme: IconThemeData(),
       textTheme: TextTheme(),
     ),
-    primaryColor: primary,
+    primaryColor: AppColors.purple,
     brightness: Brightness.light,
-    primaryColorDark: primaryDark,
-    primaryColorLight: primaryLight,
+    primaryColorDark: AppColors.purple,
+    primaryColorLight: AppColors.purple,
     accentColorBrightness: Brightness.light,
     // backgroundColor: background,
-    buttonColor: primary,
+    buttonColor: AppColors.purple,
     floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: primary,
+      backgroundColor: AppColors.purple,
       elevation: 0,
       focusElevation: 1,
       focusColor: Colors.transparent,
@@ -47,109 +28,15 @@ class AppTheme {
       splashColor: Colors.transparent,
       foregroundColor: Colors.white,
     ),
-    accentColor: secondary,
-    splashColor: primary,
-    // scaffoldBackgroundColor: background,
+    accentColor: AppColors.purple,
+    splashColor: AppColors.purple,
     cardColor: Colors.white,
     cardTheme: CardTheme(
       color: Colors.white,
     ),
     iconTheme: IconThemeData(),
-    textTheme: TextTheme(
-      headline1: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 96,
-        fontWeight: FontWeight.w300,
-        letterSpacing: -1.5,
-        decoration: TextDecoration.none,
-      ),
-      headline2: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 60,
-        fontWeight: FontWeight.w300,
-        letterSpacing: -0.5,
-        decoration: TextDecoration.none,
-      ),
-      headline3: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 48,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0,
-        decoration: TextDecoration.none,
-      ),
-      headline4: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 34,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.25,
-        decoration: TextDecoration.none,
-      ),
-      headline5: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 24,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0,
-        decoration: TextDecoration.none,
-      ),
-      headline6: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 20,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.15,
-        decoration: TextDecoration.none,
-      ),
-      subtitle1: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 16,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.15,
-        decoration: TextDecoration.none,
-      ),
-      subtitle2: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.1,
-        decoration: TextDecoration.none,
-      ),
-      bodyText1: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 16,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.5,
-        decoration: TextDecoration.none,
-      ),
-      bodyText2: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.25,
-        decoration: TextDecoration.none,
-      ),
-      button: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 1.25,
-        decoration: TextDecoration.none,
-      ),
-      caption: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 12,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.4,
-        decoration: TextDecoration.none,
-      ),
-      overline: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 10,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 1.5,
-        decoration: TextDecoration.none,
-      ),
-    ),
     bottomSheetTheme: BottomSheetThemeData(
-      backgroundColor: background,
+      backgroundColor: AppColors.white,
       elevation: 0,
     ),
     buttonTheme: ButtonThemeData(),
@@ -160,19 +47,18 @@ class AppTheme {
     appBarTheme: AppBarTheme(
       actionsIconTheme: IconThemeData(),
       brightness: Brightness.dark,
-      color: primary,
+      color: AppColors.purple,
       iconTheme: IconThemeData(),
       textTheme: TextTheme(),
     ),
-    primaryColor: primary,
-    primaryColorDark: primaryDark,
-    primaryColorLight: primaryLight,
+    primaryColor: AppColors.purple,
+    primaryColorDark: AppColors.purple,
+    primaryColorLight: AppColors.purple,
     accentColorBrightness: Brightness.dark,
-    backgroundColor: backgroundDark,
-    buttonColor: primary,
+    buttonColor: AppColors.purple,
     dividerColor: Colors.white30,
     floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: primary,
+      backgroundColor: AppColors.purple,
       elevation: 0,
       focusElevation: 1,
       focusColor: Colors.transparent,
@@ -180,126 +66,18 @@ class AppTheme {
       splashColor: Colors.transparent,
       foregroundColor: Colors.white,
     ),
-    accentColor: secondary,
-    splashColor: primary,
-    scaffoldBackgroundColor: backgroundDark,
+    accentColor: AppColors.purple,
+    splashColor: AppColors.purple,
     cardColor: Colors.grey.shade900,
     cardTheme: CardTheme(
       color: Colors.grey.shade900,
     ),
     bottomSheetTheme: BottomSheetThemeData(
-      backgroundColor: backgroundDark,
       elevation: 0,
     ),
     iconTheme: IconThemeData(),
-    textTheme: TextTheme(
-      headline1: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 96,
-        fontWeight: FontWeight.w300,
-        letterSpacing: -1.5,
-        color: Colors.white12,
-        decoration: TextDecoration.none,
-      ),
-      headline2: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 60,
-        fontWeight: FontWeight.w300,
-        letterSpacing: -0.5,
-        color: Colors.white24,
-        decoration: TextDecoration.none,
-      ),
-      headline3: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 48,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0,
-        color: Colors.white30,
-        decoration: TextDecoration.none,
-      ),
-      headline4: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 34,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.25,
-        color: Colors.white24,
-        decoration: TextDecoration.none,
-      ),
-      headline5: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 24,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0,
-        color: Colors.white70,
-        decoration: TextDecoration.none,
-      ),
-      headline6: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 20,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.15,
-        color: Colors.white,
-        decoration: TextDecoration.none,
-      ),
-      subtitle1: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 16,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.15,
-        color: Colors.white,
-        decoration: TextDecoration.none,
-      ),
-      subtitle2: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.1,
-        color: Colors.white,
-        decoration: TextDecoration.none,
-      ),
-      bodyText1: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 16,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.5,
-        color: Colors.white,
-        decoration: TextDecoration.none,
-      ),
-      bodyText2: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.25,
-        color: Colors.white,
-        decoration: TextDecoration.none,
-      ),
-      button: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 14,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 1.25,
-        color: Colors.white,
-        decoration: TextDecoration.none,
-      ),
-      caption: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 12,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 0.4,
-        color: Colors.white30,
-        decoration: TextDecoration.none,
-      ),
-      overline: TextStyle(
-        fontFamily: 'Airbnb',
-        fontSize: 10,
-        fontWeight: FontWeight.w500,
-        letterSpacing: 1.5,
-        color: Colors.white24,
-        decoration: TextDecoration.none,
-      ),
-    ),
     buttonTheme: ButtonThemeData(
-      buttonColor: primary,
+      buttonColor: AppColors.purple,
     ),
   );
 
