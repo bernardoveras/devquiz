@@ -19,6 +19,8 @@ class AppTheme {
     accentColorBrightness: Brightness.light,
     // backgroundColor: background,
     buttonColor: AppColors.purple,
+    backgroundColor: Color(0xFFF5F5FA),
+    scaffoldBackgroundColor: Color(0xFFF5F5FA),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       backgroundColor: AppColors.purple,
       elevation: 0,

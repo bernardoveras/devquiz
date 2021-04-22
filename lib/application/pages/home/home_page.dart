@@ -1,12 +1,13 @@
 import 'package:devquiz/shared/constants/app_colors.dart';
 import 'package:devquiz/shared/constants/app_gradients.dart';
-import 'package:devquiz/shared/constants/app_images.dart';
 import 'package:devquiz/shared/constants/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../shared/extensions/screen_util_extension.dart';
 
 class HomePage extends StatelessWidget {
+  double porcentagem = 75;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +33,7 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-                        text: 'Diego',
+                        text: 'Bernardo',
                         style: GoogleFonts.notoSans(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -85,12 +86,12 @@ class HomePage extends StatelessWidget {
                                 AppColors.chartPrimary,
                               ),
                               strokeWidth: 10.width,
-                              value: 0.75,
+                              value: porcentagem / 100,
                               backgroundColor: AppColors.chartSecondary,
                             ),
                           ),
                           Text(
-                            '75%',
+                            '${porcentagem.toInt()}%',
                             style: AppTextStyles.heading,
                           ),
                         ],
