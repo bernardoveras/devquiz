@@ -100,12 +100,12 @@ class HomeAppBar extends PreferredSize {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Bom resultado',
+                              porcentagem > 0 ? 'Bom resultado' : 'Vamos começar',
                               style: AppTextStyles.heading,
                             ),
                             SizedBox(height: 5.height),
                             Text(
-                              'Seu conhecimento está\nsendo aprimorado :)',
+                             porcentagem > 0 ? 'Seu conhecimento está\nsendo aprimorado :)' : 'Complete os desafios e\navance em conhecimento',
                               style: AppTextStyles.body,
                             ),
                           ],
